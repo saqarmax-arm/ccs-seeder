@@ -418,13 +418,13 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"ccsmainnet.ddnsgeek.com", ""};
-static const string testnet_seeds[] = {"ccstestnet.ddnsgeek.com", ""};
+static const string mainnet_seeds[] = {"seed1.dynuddns.com","seed2.dynuddns.com","seed3.dynuddns.com","seed4.dynuddns.com", ""};
+static const string testnet_seeds[] = {"testnet-seed1.dynuddns.com", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("kjy2eqzk4zwi5zd3.onion", 5888), true);
+    //db.Add(CService("kjy2eqzk4zwi5zd3.onion", 5888), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
