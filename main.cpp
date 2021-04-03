@@ -418,8 +418,8 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"seed1.dynuddns.com","seed2.dynuddns.com","seed3.dynuddns.com","seed4.dynuddns.com", ""};
-static const string testnet_seeds[] = {"testnet-seed1.dynuddns.com", ""};
+static const string mainnet_seeds[] = {"ccs1.ddnsguru.com","ccs2.ddnsguru.com","ccs3.ddnsguru.com","ccs4.ddnsguru.com", ""};
+static const string testnet_seeds[] = {"testnet-ccs1.ddnsguru.com", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
